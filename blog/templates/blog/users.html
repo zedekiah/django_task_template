@@ -1,0 +1,12 @@
+{% extends 'blog/layout.html' %}
+
+{% block content %}
+<div>
+    <h1>Users</h1>
+</div>
+<ul>
+    {% for user in user_list %}
+    <li>{{ user.username }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
